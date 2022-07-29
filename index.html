@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/response.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+</head>
+<body>  
+
+  <div class="mouse-pointer"><span>Click</span>
+  </div>
+
+  <header class="tab_nav">
+    <div class="header_left tab_btn">
+      <a href="#">ABOUT</a>
+    </div>
+    <h1 class="logo tab_btn">
+      <div class="logo_wrap" data-text="PUBLISHER">
+       <span>published by</span> 
+        ryu dayoung
+      </div>
+      <span class="blind">상단로고</span>
+    </h1>
+    <div class="header_right tab_btn">
+      <a href="#">WORKS</a>
+    </div>
+  </header>
+  <main class="tab_con">
+    <div class="con con1">
+      <div class="title">
+        <div class="title_wrap">
+          <h2>About me</h2>
+        </div>
+      </div>
+      <div class="wraps">
+        <div class="img_wrap img_wrap1">
+          <img src="./img/about2.jpg" alt="con1_1">
+        </div>
+        <div class="img_wrap img_wrap2">
+          <img src="./img/about3.jpg" alt="con1_1">
+        </div>
+      </div><!--wraps-->
+      <div class="introdu">
+        <div class="publisher">
+          <div class="publisher_wrap1">
+            <h3>감각적이고 창의적인 퍼블리셔</h3>
+            <p>퍼블리싱을 좋아하는 저는 정체되어있지 않고
+            더 발전하기 위해 항상 노력하고 있습니다.
+            </p>
+            <p>새로운 기술과 새로운 방식에 관심이 많고 보다 특별하고 안정적인
+            마크업을 하기 위해 노력합니다.
+            </p>
+          </div>
+          <div class="publisher_wrap2">
+            <h3>소통을 좋아하는 퍼블리셔</h3>
+            <p>평소 프로젝트나 업무를 수행할때 소통의 중요성을 인지하고 있습니다.
+            </p>
+            <p>항상 배움의 입장을 잊지않고 소통하려는 노력을 하겠습니다.
+            </p>
+          </div>
+          
+        </div>
+        <div class="resume">
+          <div class="img_wrap">
+            <img src="./img/daisy.png" alt="류다영증명사진">
+          </div>
+          <div class="resume_wrap">
+            <p class="name">이름:류다영</p>
+            <p class="name">생년월일:1992년 10월 30일</p>
+            <p class="university">동국대학교 경주캠퍼스 호텔컨벤션 경영학 졸업</p>
+            <p class="estitutes">2021 04 .05 ~ 2021 08 .10 [디지털디자인] UX/UI 디자인 (웹디자인/웹퍼블리셔)전문가 과정</p>
+          </div>
+          
+        </div> 
+      </div>
+      <div class="skills">
+        <div class="skills_wrap">
+          <h3>skills</h3>
+          <ul class="a1 active-on-visible" data-active-on-visible-callback-func-name="Circle__run">
+            <li class="second circle" circleProgress='95'>
+              <strong class="circle-percent"></strong>
+              <div class="second_wrap">
+                <span>html</span>
+              </div>
+            </li>
+            <li class="second circle" circleProgress='95'>
+              <strong class="circle-percent"></strong>
+              <div class="second_wrap">
+                <span>css</span>
+              </div>
+            </li>  
+            <li class="second circle" circleProgress='80'>
+              <strong class="circle-percent"></strong>
+              <div class="second_wrap">
+                <span>jquery</span>
+              </div>
+            </li>
+            <li class="second circle" circleProgress='80'>
+              <strong class="circle-percent"></strong>
+              <div class="second_wrap">
+                <span>photoshop</span>
+              </div>
+            </li> 
+            <li class="second circle" circleProgress='80'>
+              <strong class="circle-percent"></strong>
+              <div class="second_wrap">
+                <span>illustrator</span>
+              </div>
+            </li> 
+          </ul>
+        </div><!--skills_wrap-->
+      </div>
+    </div><!--con-->
+    <div class="con active con2">  
+      <div class="intro">
+        <div class="intro_animation">
+          <div class="img_wrap im1">
+            <img src="./img/intro1.jpg" alt="메인이미지1">
+          </div>
+          <div class="img_wrap im2">
+            <img src="./img/intro2.jpg" alt="메인이미지2">
+          </div>
+          <div class="img_wrap im3">
+            <img src="./img/intro3.jpg" alt="메인이미지3">
+          </div>
+          <div class="img_wrap im4">
+            <img src="./img/intro4.jpg" alt="메인이미지4">
+          </div>
+        </div><!--intro_animation-->
+          <div class="intro_exp">
+            <span class="intro_exp1">web publisher</span>
+            <span class="intro_exp2">ryu da young</span>
+          </div>
+      </div><!--intro-->
+
+      <div class="section">
+
+          <div class="specialized">
+            <div class="inner">
+                <span class="spe spe1">specialized in</span>
+                <strong class="wrap"> 
+                  <span class="spe spe2">PC & MOBILE WEB,</span>
+                  <span class="spe spe3">RESPONSIVE WEB </span>
+                  <span class="spe spe4">AND WEB ACCESSIBILITY</span>
+                </strong>
+            </div>
+
+            <div class="list_wrap">
+              <ul>
+                <li>
+                  <div class="wrap">
+                    <div class="img_wrap iw_pc">
+                      <div class="title">
+                      01.Seoul cityhall
+                      </div>
+                      <img src="./img/seoul.png" alt="서울시청">   
+                    </div>
+                  </div>  
+                </li>
+                <li>
+                  <div class="wrap">
+                    <div class="img_wrap iw_mobile" >
+                      <div class="title">
+                        02.Andar
+                        </div>
+                      <img src="./img/andar.png" alt="안다르">
+                    </div>     
+                  </div> 
+                </li>
+                <li>
+                  <div class="wrap">
+                    
+                    <div class="img_wrap iw_pc">
+                      <div class="title">
+                      03.Creative partners
+                      </div>
+                      <img src="./img/creative.png" alt="크리에이티브">  
+                    </div>  
+                </div> 
+                </li>  
+                <li>
+                  <div class="wrap">
+                    <div class="img_wrap iw_pc">
+                      <div class="title">
+                        04.Boucheron
+                        </div>
+                      <img src="./img/boucheron.jpg" alt="부쉐론">  
+                    </div>  
+                </div>   
+                </li>
+                <li>
+                  <div class="wrap">
+                      <div class="img_wrap iw_mobile">
+                        <div class="title">
+                          05.Iloom
+                          </div>
+                        <img src="./img/iloom.png" alt="일룸">   
+                      </div>
+                  </div>    
+                </li>  
+            </ul>
+            </div>
+
+          </div>
+        
+      </div><!--section-->
+    </div><!--con-->
+    <div class="con con3">
+      <div class="title">
+        <div class="title_wrap">
+          <h2>Works</h2>
+        </div>
+      </div>
+      <div class="wraps">
+        <div class="img_wrap img_wrap1">
+          <img src="./img/con3_title1.jpg" alt="con3_1">
+        </div>
+        <div class="img_wrap img_wrap2">
+          <img src="./img/con3_title2.jpg" alt="con3_2">
+        </div>
+      </div><!--wraps-->
+      <div class="introdu">
+        <div class="intro_wrap">
+          <p>제가 작업한 작업물들을 좀 더 자세히 소개할게요</p>
+        </div>
+      </div>
+      <ul class="works">
+        <li class="seoul">
+          <div class="work_top iw_pc">
+            <a href="https://dayoungryu.github.io/seoul_cityhall/">
+              <div class="img_wrap">
+                <img src="./img/seoul.png" alt="서울시청">     
+              </div>
+            </a>
+          </div>
+          <div class="work_bottom">
+            <div class="work_title">
+              <h3>서울시청(포트폴리오용)
+              </h3>
+            </div>
+            <div class="explain">
+              <p>기존 서울시청 PC 페이지의 카피 사이트를 제작해 보았습니다.
+                  관공서 홈페이지라는 특성에 따라 웹 접근성에 중점을 두고 작업하였습니다.
+              </p> 
+              <div class="point">
+                Point :
+                <span>관공서 홈페이지</span>
+                <span>PC페이지</span>
+              </div>
+              <div class="participate">
+                참여도 : 100%
+              </div>
+              <div class="work_botttom_wrap">
+                <div class="work_type">Publishing</div>
+                <div class="godirect">
+                  <a href="https://dayoungryu.github.io/seoul_cityhall/">
+                    사이트 바로가기
+                  </a>
+                </div>
+              </div> 
+          </div>    
+        </li>  
+        <li class="reverse andar">
+          <div class="work_top iw_mobile">
+            <a href="https://dayoungryu.github.io/andar/">
+              <div class="img_wrap">
+                <img src="./img/andar.png" alt="안다르">     
+              </div>
+            </a>
+          </div>
+          <div class="work_bottom">
+            <div class="work_title">
+              <h3>안다르(포트폴리오용)
+              </h3>
+            </div>
+            <div class="explain">
+              <p>기존 안다르의 모바일 페이지의 카피 사이트를 제작해 보았습니다.
+                기존 사이트의 몇가지의 요소들을 변경하여 제작하였으며,
+                모바일 페이지라는 특성에 따라 다양한 모바일 기기에 적용이 가능한 사이트를 제작하였습니다.
+              </p> 
+              <div class="point">
+                Point :
+                <span>모바일 페이지</span>
+              </div>
+              <div class="participate">
+                참여도 : 100%
+              </div>
+              <div class="work_botttom_wrap">
+                <div class="work_type">Publishing</div>
+                <div class="godirect">
+                  <a href="https://dayoungryu.github.io/andar/">
+                    사이트 바로가기
+                  </a>
+                </div>
+              </div> 
+          </div>    
+        </li>
+        <li class="creative">
+          <div class="work_top iw_pc">
+            <a href="https://dayoungryu.github.io/creative_partners/">
+              <div class="img_wrap">
+                <img src="./img/creative.png" alt="크리에이티브">     
+              </div>
+            </a>
+          </div>
+          <div class="work_bottom">
+            <div class="work_title">
+              <h3>크리에이티브 파트너스(포트폴리오용)
+              </h3>
+            </div>
+            <div class="explain">
+              <p>기존 크리에이티브 파트너스의 PC 페이지의 카피 사이트를 제작해 보았습니다.
+                카피 사이트를 제작하며 반응형 사이트로 제작해 보였으며, 기존 밋밋해 보일수 있는 사이트를 좀 더 동적인 무브먼트를 가미하여 제작하였습니다.
+              </p> 
+              <div class="point">
+                Point :
+                <span>반응형 페이지</span>
+              </div>
+              <div class="participate">
+                참여도 : 100%
+              </div>
+              <div class="work_botttom_wrap">
+                <div class="work_type">Publishing</div>
+                <div class="godirect">
+                  <a href="https://dayoungryu.github.io/creative_partners/">
+                    사이트 바로가기
+                  </a>
+                </div>
+              </div> 
+          </div>    
+        </li>
+        <li class="reverse boucheron">
+          <div class="work_top iw_pc">
+            <a href="https://dayoungryu.github.io/boucheron_pc/">
+              <div class="img_wrap">
+                <img src="./img/boucheron.PNG" alt="부쉐론">     
+              </div>
+            </a>
+          </div>
+          <div class="work_bottom">
+            <div class="work_title">
+              <h3>부쉐론(포트폴리오용)
+              </h3>
+            </div>
+            <div class="explain">
+              <p>명품 브랜드 부쉐론의 PC페이지를 디자인 및 제작해 보았습니다.
+                기존의 사이트 보다 좀 더 브랜드의 아이덴티티와 트렌디함을 살리는 것을 초점으로 디자인을 진행하였으며,
+                동적인 무브먼트를 가미하여 좀 더 재미있게 사이트를 경험할 수 있도록 제작 하였습니다.
+              </p> 
+              <div class="point">
+                Point :
+                <span> PC 페이지</span> <span> 디자인</span>
+              </div>
+              <div class="participate">
+                참여도 : 100%
+              </div>
+              <div class="work_botttom_wrap">
+                <div class="work_type">Design &amp; Publishing</div>
+                <div class="godirect">
+                  <a href="https://dayoungryu.github.io/boucheron_pc/">
+                    사이트 바로가기
+                  </a>
+                </div>
+              </div> 
+          </div>    
+        </li>
+        <li class="iloom">
+          <div class="work_top iw_mobile">
+            <a href="https://dayoungryu.github.io/iloom_mobile/">
+              <div class="img_wrap">
+                <img src="./img/iloom.png" alt="일룸">     
+              </div>
+            </a>
+          </div>
+          <div class="work_bottom">
+            <div class="work_title">
+              <h3>일룸(포트폴리오용)
+              </h3>
+            </div>
+            <div class="explain">
+              <p>가구 브랜드 일룸의 모바일 페이지를 디자인 및 제작해 보았습니다.
+                판매를 목적으로 하는 일룸의 기존의 사이트 보다 좀 더 브랜드의 아이덴티티와 정보전달을 목적으로한 사이트로 제작하였습니다.                          
+                동적인 무브먼트를 가미하여 좀 더 재미있게 사이트를 경험할 수 있도록 제작 하였습니다.
+              </p> 
+              <div class="point">
+                Point :
+                <span> 모바일 페이지</span> <span> 디자인</span>
+              </div>
+              <div class="participate">
+                참여도 : 100%
+              </div>
+              <div class="work_botttom_wrap">
+                <div class="work_type">Design &amp; Publishing</div>
+                <div class="godirect">
+                  <a href="https://dayoungryu.github.io/iloom_mobile/">
+                    사이트 바로가기
+                  </a>
+                </div>
+              </div> 
+          </div>    
+        </li> 
+
+      </ul>
+    </div><!--con3-->
+  </main>
+  <footer>
+    <div class="footer_group">
+      <div class="footer_wrap">
+        <p>Let's work <br>
+          together!</p>
+        <a href="mailto:ekdud3512@gmail.com" class="mail">ekdud3512@gmail.com</a>
+      </div>
+      <p class="copyright">
+      <span>Thanks for visiting my Website.</span> 
+        <span>Copyright &copy; 2022. Dayoung Ryu All rights reserved.</span>
+        </p>
+    </div>    
+  </footer>
+</body>
+</html>  
