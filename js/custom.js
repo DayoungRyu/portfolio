@@ -1,9 +1,6 @@
 
 $(function() {
 
-
-    //con2 start
-
     //탭메뉴
 
     $('.tab_nav .tab_btn').click(function(e){
@@ -24,8 +21,11 @@ $(function() {
     $('.tab_btn').click(function(e){
         e.preventDefault();
         $('html,body').animate({scrollTop:0},300)
+    
     })
 
+
+  
     //intro 이미지 자동 변경
 
     const intro = gsap.timeline({
@@ -44,7 +44,7 @@ $(function() {
         scrollTrigger:{
             trigger:".specialized",
             start:"top 86%",
-            //  markers:true,
+            //markers:true,
             scrub:1
         }
     });
@@ -62,24 +62,53 @@ $(function() {
             trigger:".specialized",
             start:"top top",
             end:"+=5000",
-            //  markers:true,
+            //markers:true,
             scrub:1,
             pin:true,
         }
     });
 
-
     scroll02.to('.specialized .inner',{delay:3,opacity:0})
     scroll02.to('.list_wrap',{opacity:1,"visibility": "visible"})
     scroll02.to('.list_wrap ul',{xPercent:-80,duration:5})
 
+    //con1 title 아래로 가는 효과
+    
 
-    //슬라이드 page 이동
+    const scroll03 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".con1",
+            start:"500px 400px",
+            end:"50% 80%",
+            //markers:true,
+            scrub:1,
+        }
+    });
+
+    scroll03.to('.con1 .title .title_wrap h2',{opacity:0,y:1250})
+
+    //con3 title 아래로 가는 효과
+    
+
+    const scroll04 = gsap.timeline({
+        scrollTrigger:{
+            trigger:".con3",
+            start:"500px 400px",
+            end:"50% 80%",
+            markers:true,
+            scrub:1,
+        }
+    });
+
+    scroll04.to('.con3 .title .title_wrap h2',{opacity:0,y:1250})
+
+
+    //슬라이드 p
 
     gsap.from(".selectedworks .sel",{
         scrollTrigger:{
             trigger:".selectedworks",
-            start:"1500px 50%",
+            start:"20% 50%",
             // markers:true,
             scrub:1
         },
@@ -89,186 +118,31 @@ $(function() {
     gsap.from(".selectedworks .wor",{
         scrollTrigger:{
             trigger:".selectedworks",
-            start:"1500px 50%",
-             // markers:true,
+            start:"20% 50%",
+            // markers:true,
             scrub:1
         },
         x:500,   
     })
 
-    //마우스
-
-    $(document).mousemove(function(e){
-    
-        gsap.to('.mouse-pointer',{
-          x:e.clientX-50,
-          y:e.clientY-20,
-        })
-      });
-
-      $('a').mouseover(function(){
-        $('.mouse-pointer').addClass('show');
-      })
-    
-      $('a').mouseleave(function(){
-        $('.mouse-pointer').removeClass('show');
-      })
 
     //footer
 
 
-    gsap.from("footer .footer_group",{
+    gsap.from("footer",{
         scrollTrigger:{
             Ypercent:300,
-            trigger:"footer",
-            start:"top 50%",
-            end:"100% bottom",
-          //  markers:true,
+            trigger:".section",
+            start:"80% 50%",
+            //markers:true,
             scrub:1  
         },
         y:0,   
+        backgroundColor:'#fff',
     })
 
-    //con1
-
-    //con1 title 아래로 가는 효과
-
-
-    gsap.to(".con1 .title h2",{
-        scrollTrigger:{
-            trigger:".con1",
-            start:"10% 50%",
-            end:"35% 20%",
-         //   markers:true,
-            scrub:1,
-        },
-        y:1250, 
-        opacity:0  
-    })
-
-    //퍼블리셔 설명
-
-    gsap.from(".con1 .introdu .publisher .publisher_wrap1",{
-        scrollTrigger:{
-             trigger:".con1",
-             start:"35% 50%",
-             end:"65% 50%",
-           //  markers:true,
-             scrub:1,
-         },
-         x:-250, 
-         opacity:0  
-     })
- 
-     gsap.from(".con1 .introdu .publisher .publisher_wrap2",{
-         scrollTrigger:{
-             trigger:".con1",
-             start:"55% 50%",
-             end:"65% 50%",
-            // markers:true,
-             scrub:1,
-         },
-         x:250, 
-         opacity:0  
-     })
-
-
-    //con3
-
-    //con3 title 아래로 가는 효과
-
-    gsap.to(".con3 .title h2",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"8% 50%",
-            end:"40% 50%",
-          //  markers:true,
-            scrub:1,
-        },
-        y:1250, 
-        opacity:0 
-    })
-
-    //con3 멘트
-
-    gsap.from(".con3 .introdu .intro_wrap",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"42% 50%",
-            end:"50% 50%",
-          //  markers:true,
-            scrub:1
-        },
-        y:-500,   
-    })
-
-
-
-
-    //con3 works 
-
-    gsap.from(".con3 .works li.seoul",{
-        scrollTrigger:{
-             trigger:".con",
-             start:"60% 50%",
-             end:"65% 50%",
-           //  markers:true,
-             scrub:1,
-         },
-         x:-50, 
-         opacity:0  
-     })
- 
-     gsap.from(".con3 .works li.andar",{
-         scrollTrigger:{
-            trigger:".con",
-            start:"78% 50%",
-            end:"83% 50%",
-           //  markers:true,
-             scrub:1,
-         },
-         x:50, 
-         opacity:0  
-     })
-
-     gsap.from(".con3 .works li.creative",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"95% 50%",
-            end:"100% 50%",
-          // markers:true,
-            scrub:1,
-        },
-        x:-50, 
-        opacity:0  
-    })
-
-    gsap.from(".con3 .works li.boucheron",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"110% 50%",
-            end:"120% 50%",
-          //  markers:true,
-            scrub:1,
-        },
-        x:50, 
-        opacity:0  
-    })
-
-    gsap.from(".con3 .works li.iloom",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"125% 50%",
-            end:"135% 50%",
-           // markers:true,
-            scrub:1,
-        },
-        x:-50, 
-        opacity:0  
-    })
-
-});
-
+    
+})
     //원형 그래프
 
     /* 발견되면 활성화시키는 라이브러리 시작 */
