@@ -20,7 +20,7 @@ $(function() {
 
     //탭메뉴 클릭시 탑으로 이동
 
-    $('footer .scroll_top').click(function(e){
+    $('.tab_btn,footer .scroll_top').click(function(e){
         e.preventDefault();
         $('html,body').animate({scrollTop:0},"slow");
         return false;
@@ -114,21 +114,8 @@ $(function() {
         $('.mouse-pointer').removeClass('show');
       })
 
+
     //footer
-
-
-    gsap.from("footer .footer_group",{
-        scrollTrigger:{
-            Ypercent:300,
-            trigger:"footer",
-            start:"top 50%",
-            end:"100% bottom",
-          //  markers:true,
-            scrub:1  
-        },
-        y:0,  
-        backgroundColor:'#fff',
-    })
 
     //con1
 
@@ -140,7 +127,7 @@ $(function() {
             trigger:".con1",
             start:"10% 50%",
             end:"35% 20%",
-            markers:true,
+           // markers:true,
             scrub:1,
         },
         y:1250, 
@@ -154,7 +141,7 @@ $(function() {
              trigger:".con1",
              start:"35% 50%",
              end:"65% 50%",
-             markers:true,
+         //    markers:true,
              scrub:1,
          },
          x:-150, 
@@ -166,7 +153,7 @@ $(function() {
              trigger:".con1",
              start:"55% 50%",
              end:"65% 50%",
-             markers:true,
+           //  markers:true,
              scrub:1,
          },
          x:150, 
@@ -178,7 +165,7 @@ $(function() {
             trigger:".con1",
             start:"65% 50%",
             end:"75% 50%",
-            markers:true,
+          //  markers:true,
             scrub:1,
         },
         x:-250, 
@@ -214,8 +201,6 @@ $(function() {
         },
         y:-500,   
     })
-
-
 
 
     //con3 works 
