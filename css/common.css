@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
 .blind {
     position: absolute;
     width: 1px;
@@ -19,3 +20,42 @@
   color: #303a48;
   background: #fff;
 }
+
+/* 마우스 포인터 */
+
+body{
+  cursor:none;
+}
+
+
+.mouse-pointer {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #191919;
+  border-radius: 50%;
+  padding:5px;
+  text-align: center;
+  position: fixed;
+  z-index: 50;
+  display: block;
+  pointer-events: none;
+}
+
+.mouse-pointer.show {
+  width: 50px;
+  height: 50px;
+  background: #333;
+}
+
+.mouse-pointer.show span{
+  display: block;
+}
+
+.mouse-pointer span{
+  color:#fff;
+  display: none;
+  line-height: 50px;
+  font-size: 12px;
+}
+
