@@ -202,64 +202,7 @@ $(function() {
         y:-500,   
     })
 
-
     //con3 works 
-
-    gsap.from(".con3 .works li.seoul",{
-        scrollTrigger:{
-             trigger:".con",
-             start:"60% 50%",
-             end:"65% 50%",
-          //  markers:true,
-             scrub:1,
-         },
-         x:-50,  
-     })
- 
-     gsap.from(".con3 .works li.andar",{
-         scrollTrigger:{
-            trigger:".con",
-            start:"78% 50%",
-            end:"83% 50%",
-           // markers:true,
-            scrub:1,
-         },
-         x:50, 
-
-     })
-
-     gsap.from(".con3 .works li.creative",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"95% 50%",
-            end:"100% 50%",
-            //markers:true,
-            scrub:1,
-        },
-        x:-50, 
-    })
-
-    gsap.from(".con3 .works li.boucheron",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"110% 50%",
-            end:"120% 50%",
-           // markers:true,
-            scrub:1,
-        },
-        x:50, 
-    })
-
-    gsap.from(".con3 .works li.iloom",{
-        scrollTrigger:{
-            trigger:".con",
-            start:"125% 50%",
-            end:"130% 50%",
-          //  markers:true,
-            scrub:1,
-        },
-        x:-50, 
-    })
 
 });
 
